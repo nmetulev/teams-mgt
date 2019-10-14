@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "owc-dev-server --port 4000 --app-index teams.html --watch"
+    "start": "run-p server ngrok",
+    "server": "owc-dev-server --port 4000 --app-index teams.html --watch",
+    "ngrok": "ngrok http -subdomain=mgt 4000"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +14,8 @@
     "@microsoft/mgt": "^1.0.0"
   },
   "devDependencies": {
+    "ngrok": "^3.2.5",
+    "npm-run-all": "^4.1.5",
     "owc-dev-server": "^1.0.1"
   }
 }
