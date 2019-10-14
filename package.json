@@ -1,0 +1,17 @@
+{
+  "name": "examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "owc-dev-server --port 4000 --app-index teams.html --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@microsoft/mgt": "^1.0.0"
+  },
+  "devDependencies": {
+    "owc-dev-server": "^1.0.1"
+  }
+}
